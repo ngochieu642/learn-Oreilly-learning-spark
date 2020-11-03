@@ -1,4 +1,4 @@
-# Getting Started with Spark
+# Chapter 2: Getting Started with Spark
 
 ## Spark Core Concepts
 
