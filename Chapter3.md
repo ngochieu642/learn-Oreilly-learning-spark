@@ -115,4 +115,18 @@ class WordFunctions(object):
 - Return type be the same type as that of the elements in the RDD we are operating over
   - `reduce()`: Like JS reduce
   - `fold()`: Like reduce but takes a "zero value" for initial call on each partition
-- `aggregate()`:
+- `aggregate()`: no need having the return be the same type as the RDD we are working on.
+  - Need a initial zero value of the type we want to return
+  - Supply a function to combine the elements from our RDD
+  - Supply a function to merge two accumulators
+- `collect()`
+- `take()`
+- `top()`
+- `foreach()`
+- `count()`
+- `countByValue()`
+
+## Persistence (Caching)
+
+- `persist()` & `unpersist()`
+- If too much data is cached into memory, Spark will automatically evict old partitions using a Least Recently Used (LRU) cache policy
