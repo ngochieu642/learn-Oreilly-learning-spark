@@ -7,6 +7,10 @@ services:
       - dev-network
     ports:
       - "4040:4040"
+    volumes:
+      - ./my-src:/code/src
+      - ./learning-spark:/code/learning-spark
+      - ./.vscode-server:/root/.vscode-server
     logging:
       driver: "json-file"
       options:
