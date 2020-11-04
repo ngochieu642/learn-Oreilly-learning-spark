@@ -7,6 +7,7 @@ services:
       - dev-network
     ports:
       - "4040:4040"
+    user: root
     volumes:
       - ./my-src:/code/src
       - ./learning-spark:/code/learning-spark
